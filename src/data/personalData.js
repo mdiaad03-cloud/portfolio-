@@ -28,11 +28,12 @@ import {
 } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
 
+import profilePic from "../assets/profile.jpg";
+
 /* ── Profile image URL ─────────────────────────────────────────────
- * Replace this string with your own image URL and the avatar
- * across the site will update automatically.
+ * The avatar across the site will update automatically.
  * ----------------------------------------------------------------*/
-const PROFILE_IMAGE = "/images/profile.jpg";
+const PROFILE_IMAGE = profilePic;
 
 const data = {
   /* ── Personal Information ──────────────────────────────────────── */
