@@ -148,7 +148,7 @@ Currently a second-year student at Badr University in Assiut, I am constantly le
 
   /* ── Contact ───────────────────────────────────────────────────── */
   contact: {
-    email: "mohameddiaa@example.com",
+    email: "mdiaad03@gmail.com",
     message:
       "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Let's connect!",
   },
