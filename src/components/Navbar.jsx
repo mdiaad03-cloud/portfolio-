@@ -63,7 +63,7 @@ export default function Navbar() {
           {/* Download CV */}
           <li>
             <a
-              href="/cv.html"
+              href={`${import.meta.env.BASE_URL}Mohamed_Diaa_CV.pdf`}
               target="_blank"
               rel="noreferrer"
               className="px-5 py-2 rounded-full text-sm font-medium text-white bg-gradient-to-r from-brand-400 to-accent-400 hover:shadow-lg hover:shadow-brand-400/30 transition-all duration-300"
@@ -106,7 +106,7 @@ export default function Navbar() {
               ))}
               <li>
                 <a
-                  href="/cv.html"
+                  href={`${import.meta.env.BASE_URL}Mohamed_Diaa_CV.pdf`}
                   target="_blank"
                   rel="noreferrer"
                   className="px-6 py-2.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-brand-400 to-accent-400"

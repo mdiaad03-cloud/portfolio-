@@ -13,7 +13,7 @@
 **A modern, high-end personal portfolio built with React, Vite, Tailwind CSS v4, and Framer Motion.**
 **Featuring glassmorphism design, scroll-triggered animations, and a fully responsive dark-mode UI.**
 
-[🌐 Live Demo](#) · [📄 Download CV](./public/cv.html) · [📬 Contact Me](mailto:mdiaad03@gmail.com)
+[🌐 Live Demo](https://mdiaad03-cloud.github.io/portfolio-/) · [📄 Download CV](./public/Mohamed_Diaa_CV.pdf) · [📬 Contact Me](mailto:mdiaad03@gmail.com)
 
 </div>
 
