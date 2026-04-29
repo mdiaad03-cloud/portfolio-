@@ -32,7 +32,7 @@ import { FaCss3Alt } from "react-icons/fa";
  * Replace this string with your own image URL and the avatar
  * across the site will update automatically.
  * ----------------------------------------------------------------*/
-const PROFILE_IMAGE = "/images/profile.png";
+const PROFILE_IMAGE = "/images/profile.jpg";
 
 const data = {
   /* ── Personal Information ──────────────────────────────────────── */
