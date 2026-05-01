@@ -13,20 +13,21 @@
 
 /* ── Custom Theme Tokens ───────────────────────────────────────────── */
 @theme {
-  /* Brand palette */
-  --color-brand-50:  #f0e6ff;
-  --color-brand-100: #d9c2ff;
-  --color-brand-200: #b388ff;
-  --color-brand-300: #9c5cff;
-  --color-brand-400: #7c4dff;
-  --color-brand-500: #651fff;
-  --color-brand-600: #5a17e6;
-  --color-brand-700: #4a0fbf;
-  --color-brand-800: #3b0a99;
-  --color-brand-900: #2d0673;
+  /* Brand palette - Neon Green */
+  --color-brand-50:  #e6ffef;
+  --color-brand-100: #b3ffce;
+  --color-brand-200: #80ffad;
+  --color-brand-300: #4dff8d;
+  --color-brand-400: #00d95a;
+  --color-brand-500: #00b84c;
+  --color-brand-600: #00963e;
+  --color-brand-700: #007530;
+  --color-brand-800: #005422;
+  --color-brand-900: #003314;
 
-  --color-accent-400: #00e5ff;
-  --color-accent-500: #00b8d4;
+  /* Accent palette - Neon Blue */
+  --color-accent-400: #00a3ff;
+  --color-accent-500: #008bcc;
 
   /* Surface / background colors */
   --color-surface-900: #0a0a0f;

@@ -103,22 +103,34 @@ Currently a second-year student at Badr University in Assiut, I am constantly le
   /* ── Education & Certifications ────────────────────────────────── */
   certifications: [
     {
-      title: "Python Course",
-      issuer: "Microsoft",
+      title: "C++ The Complete Guide",
+      issuer: "Self-Study & Practice",
       description:
-        "Completed an official Microsoft Python course covering fundamentals, data structures, and automation.",
+        "Mastered the depths of C++, from foundational syntax to advanced memory management and object-oriented programming paradigms.",
+    },
+    {
+      title: "Data Structures & Algorithms",
+      issuer: "Continuous Learning",
+      description:
+        "Extensive problem-solving and algorithmic training, crucial for competitive programming and building efficient software systems.",
+    },
+    {
+      title: "Database System Concepts",
+      issuer: "Academic & Practical",
+      description:
+        "Comprehensive understanding of database design, normalization, relational algebra, and SQL optimization.",
+    },
+    {
+      title: "Clean Code & Design Patterns",
+      issuer: "Code Craftsmanship",
+      description:
+        "Deep dive into software architecture, SOLID principles, and proven design patterns to build scalable and maintainable applications.",
     },
     {
       title: "ITI Certificate",
       issuer: "Information Technology Institute",
       description:
         "Earned a professional certificate from ITI, demonstrating proficiency in modern IT skills.",
-    },
-    {
-      title: "Problem Solving with C++",
-      issuer: "Competitive Programming",
-      description:
-        "Intensive problem-solving training in C++, preparing for ECPC-level algorithmic challenges.",
     },
   ],
 
