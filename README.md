@@ -11,9 +11,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
 
 **A modern, high-end personal portfolio built with React, Vite, Tailwind CSS v4, and Framer Motion.**
-**Featuring glassmorphism design, scroll-triggered animations, and a fully responsive dark-mode UI.**
+**Featuring a custom Bento Grid design, sleek glassmorphism, scroll-triggered animations, and a fully responsive dark-mode UI.**
 
-[🌐 Live Demo](https://mdiaad03-cloud.github.io/portfolio-/) · [📄 Download CV](./public/Mohamed_Diaa_CV.pdf) · [📬 Contact Me](mailto:mdiaad03@gmail.com)
+[🌐 Live Demo](https://mdiaad03-cloud.github.io/portfolio-/) · [📬 Contact Me](mailto:mdiaad03@gmail.com)
 
 </div>
 
@@ -22,51 +22,16 @@
 ## 📸 Screenshots
 
 ### 🏠 Hero Section
-> The landing view featuring animated gradient orbs, profile avatar, name in English & Arabic, university badge, and call-to-action buttons.
+> A minimalist, full-screen landing view prioritizing the background image. Features a sleek glass dock for the name, title, and call-to-action button, without any intrusive overlapping elements.
 
 ![Hero Section](./docs/screenshots/hero.png)
 
 ---
 
-### 👨‍💻 About Me
-> A detailed bio highlighting Full Stack Development expertise, MERN stack skills, and ECPC qualification. Accompanied by glass-styled info cards showing location, university, student ID, and achievements.
+### 🍱 Bento Grid Architecture
+> A modern, Apple-style interconnected grid of glass cards replacing traditional stacked sections. Includes an interactive skills marquee, structured CS courses, professional software engineering training timeline, and contact options.
 
-![About Section](./docs/screenshots/about.png)
-
----
-
-### 🛠️ Skills & Technologies
-> A responsive grid of 12 technology icons with hover animations. Each card displays the technology's official colored icon.
-
-![Skills Section](./docs/screenshots/skills.png)
-
----
-
-### 💼 Experience
-> Professional training timeline displayed in alternating glass cards with a gradient connector line. Includes training at National Bank of Egypt, Orascom, and El Orman.
-
-![Experience Section](./docs/screenshots/experience.png)
-
----
-
-### 🎓 Education & Certifications
-> Certification cards for Microsoft Python Course, ITI Certificate, and C++ Problem Solving — each with staggered reveal animations.
-
-![Education Section](./docs/screenshots/education.png)
-
----
-
-### 📂 Featured Projects
-> Spotlight project card for **C2A LAP** — a Full Stack E-commerce Dashboard & Store with direct GitHub link and technology tags.
-
-![Projects Section](./docs/screenshots/projects.png)
-
----
-
-### 📬 Contact & Footer
-> Glass-styled contact card with email CTA, social links (GitHub & LinkedIn), quick navigation, and copyright notice.
-
-![Contact Section](./docs/screenshots/contact.png)
+![Bento Grid Section](./docs/screenshots/bento_grid.png)
 
 ---
 
@@ -74,49 +39,38 @@
 
 | Feature | Description |
 |---------|-------------|
-| 🎨 **Glassmorphism Design** | Frosted glass cards with backdrop blur and subtle gradient borders |
-| 🌙 **Dark Mode** | Premium dark theme with deep purple & cyan accent palette |
-| 🎬 **Scroll Animations** | Framer Motion scroll-triggered reveal effects on every section |
-| 📱 **Fully Responsive** | Optimized for mobile, tablet, and desktop viewports |
-| 🖼️ **Auto-Update Avatar** | Change one URL in `personalData.js` and the photo updates everywhere |
-| 📄 **Professional CV** | Built-in printable CV page (`/cv.html`) following international ATS standards |
-| 🔗 **Social Integration** | GitHub and LinkedIn links with hover effects |
-| ⬇️ **Download CV** | One-click access to a print-ready professional resume |
-| 🧩 **Modular Components** | Clean, reusable React components with clear separation of concerns |
-| 🎯 **SEO Optimized** | Proper meta tags, semantic HTML, and heading hierarchy |
+| 🍱 **Bento Grid Layout** | Modern, compact, and highly customized card-based architecture |
+| 🎨 **Glassmorphism Design** | Frosted glass cards with backdrop blur and subtle glowing borders |
+| 🌙 **Neon Dark Mode** | Premium dark theme with vibrant Neon Green & Cyan accents |
+| 🎬 **Micro-Animations** | Framer Motion scroll-triggered reveal effects and interactive hover states |
+| 📱 **Fully Responsive** | Flexibly adapts to mobile, tablet, and ultra-wide desktop viewports |
+| 🧩 **Streamlined Codebase** | Extremely clean component structure with minimal boilerplate |
+| 🎯 **SEO Optimized** | Proper meta tags, semantic HTML, and high search engine visibility |
 
 ---
 
 ## 🏗️ Project Structure
 
-```
+```text
 portfolio/
 ├── public/
-│   ├── cv.html                  # Printable CV (ATS-friendly, no photo)
 │   └── images/
 │       └── profile.jpg          # Profile photo
 ├── src/
 │   ├── main.jsx                 # Entry point
-│   ├── index.css                # Global theme tokens & glass utilities
-│   ├── App.jsx                  # Root component
+│   ├── index.css                # Global theme tokens, custom scrollbars & glass utilities
+│   ├── App.jsx                  # Root component (Simplified)
 │   ├── data/
 │   │   └── personalData.js      # 📌 Central data — edit here to update everything
 │   └── components/
-│       ├── Navbar.jsx            # Fixed glass navbar + mobile hamburger menu
-│       ├── Hero.jsx              # Hero with animated orbs & avatar
-│       ├── About.jsx             # Bio + personal info cards
-│       ├── Skills.jsx            # Tech skills grid with icons
-│       ├── Experience.jsx        # Training timeline
-│       ├── Education.jsx         # Certification cards
-│       ├── Projects.jsx          # Featured project spotlight
-│       ├── Contact.jsx           # Email CTA card
-│       ├── Footer.jsx            # Social links & copyright
-│       ├── SectionWrapper.jsx    # Reusable scroll-animated wrapper
-│       └── SectionHeading.jsx    # Reusable gradient heading
-├── docs/screenshots/             # README screenshots
-├── LICENSE                       # MIT License
-├── package.json
-└── vite.config.js
+│       ├── Navbar.jsx           # Fixed glass navbar + mobile menu
+│       ├── Hero.jsx             # Minimalist full-screen hero with bottom dock
+│       ├── BentoGrid.jsx        # The core masonry grid containing all portfolio sections
+│       └── Footer.jsx           # Copyright and quick links
+├── docs/screenshots/            # README presentation images
+├── LICENSE                      # MIT License
+├── package.json                 # Dependencies and SEO metadata
+└── vite.config.js               # Vite build configuration
 ```
 
 ---
@@ -146,13 +100,15 @@ npm run dev
 
 The app will be running at **http://localhost:5173/**
 
-### Build for Production
+### Build & Deploy
 
 ```bash
+# Build the production files
 npm run build
-```
 
-The optimized build will be in the `dist/` folder.
+# Deploy directly to GitHub Pages
+npm run deploy
+```
 
 ---
 
@@ -165,15 +121,12 @@ All personal data is centralized in **one file**:
 | Field | What it controls |
 |-------|-----------------|
 | `name` | Name displayed in Hero, Navbar, and Footer |
-| `arabicName` | Arabic name shown below the English name |
-| `profileImage` | Avatar photo URL — change once, updates everywhere |
-| `hero.title` | Job title in the Hero section |
-| `skills` | Skills grid items and icons |
-| `experience` | Experience timeline cards |
-| `certifications` | Education & certification cards |
-| `projects` | Featured project cards with GitHub links |
-| `socials` | Social media links (GitHub, LinkedIn) |
-| `contact.email` | Contact email for the CTA button |
+| `about.bio` | Your full detailed biography |
+| `skills` | Tech stack icons displayed in the Marquee card |
+| `experience` | Professional training and internship timeline |
+| `certifications` | Academic courses and CS subjects |
+| `projects` | Featured project spotlight cards |
+| `contact.email` | The target email address for the Gmail compose button |
 
 ---
 
