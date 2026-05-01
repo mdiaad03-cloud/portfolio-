@@ -137,7 +137,7 @@ export default function BentoGrid() {
           </div>
           
           <div className="mt-8 space-y-4">
-            <a href={`mailto:${data.contact.email}`} className="block w-full py-3 text-center rounded-xl bg-brand-400 text-surface-900 font-bold hover:bg-white transition-colors">
+            <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${data.contact.email}`} target="_blank" rel="noreferrer" className="block w-full py-3 text-center rounded-xl bg-brand-400 text-surface-900 font-bold hover:bg-white transition-colors">
               Email Me
             </a>
             <div className="flex justify-center gap-4">
