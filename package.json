@@ -1,8 +1,22 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "🚀 Premium Full Stack Developer Portfolio | Modern Glassmorphism UI | Built with React, Vite, Tailwind CSS & Framer Motion. Showcasing projects, skills, and professional ATS-friendly CV.",
+  "author": "Mohamed Diaa El-Din Samy <mdiaad03@gmail.com>",
+  "keywords": [
+    "portfolio",
+    "react",
+    "tailwind-css",
+    "framer-motion",
+    "glassmorphism",
+    "vite",
+    "full-stack",
+    "developer",
+    "dark-mode",
+    "ui-design"
+  ],
   "homepage": "https://mdiaad03-cloud.github.io/portfolio-/",
   "scripts": {
     "dev": "vite",
