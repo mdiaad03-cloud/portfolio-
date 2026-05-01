@@ -24,14 +24,14 @@
 ### 🏠 Hero Section
 > A minimalist, full-screen landing view prioritizing the background image. Features a sleek glass dock for the name, title, and call-to-action button, without any intrusive overlapping elements.
 
-![Hero Section](./docs/screenshots/hero.png)
+![Hero Section](./docs/screenshots/hero-v2.png)
 
 ---
 
 ### 🍱 Bento Grid Architecture
 > A modern, Apple-style interconnected grid of glass cards replacing traditional stacked sections. Includes an interactive skills marquee, structured CS courses, professional software engineering training timeline, and contact options.
 
-![Bento Grid Section](./docs/screenshots/bento_grid.png)
+![Bento Grid Section](./docs/screenshots/bento_grid-v2.png)
 
 ---
 
