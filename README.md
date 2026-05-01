@@ -13,7 +13,7 @@
 **A modern, high-end personal portfolio built with React, Vite, Tailwind CSS v4, and Framer Motion.**
 **Featuring a custom Bento Grid design, sleek glassmorphism, scroll-triggered animations, and a fully responsive dark-mode UI.**
 
-[🌐 Live Demo](https://mdiaad03-cloud.github.io/portfolio-/) · [📬 Contact Me](mailto:mdiaad03@gmail.com)
+[🌐 Live Demo](https://mdiaad03-cloud.github.io/portfolio-/) · [📄 Download CV](https://mdiaad03-cloud.github.io/portfolio-/Mohamed_Diaa_CV.pdf) · [📬 Contact Me](mailto:mdiaad03@gmail.com)
 
 </div>
 
