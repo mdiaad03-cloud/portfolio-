@@ -53,13 +53,18 @@ const data = {
     cta: "Explore My Work",
   },
 
-  /* ── About Section ─────────────────────────────────────────────── */
   about: {
-    bio: `I'm a passionate Full Stack Developer driven by the desire to craft elegant, high-performance web applications. My toolkit includes React, Node.js, Express, and MongoDB — the complete MERN stack — which I leverage to build seamless end-to-end solutions.
+    bio: `I’m a highly motivated Full Stack Developer and competitive programmer with a strong focus on building real-world, scalable solutions.
 
-Beyond web development, I hone my problem-solving abilities through competitive programming in C++. I am proud to have qualified for the Egyptian Collegiate Programming Contest (ECPC), a testament to my analytical thinking and dedication.
+Currently a second-year Computer Science student at Badr University in Assiut, I actively bridge the gap between academic knowledge and practical application by developing full-stack systems using the MERN stack (React, Node.js, Express, MongoDB).
 
-Currently a second-year student at Badr University in Assiut, I am constantly learning, experimenting, and pushing the boundaries of what I can build.`,
+I’ve built and deployed complete projects including an E-commerce Dashboard & Store, focusing on performance, clean architecture, and user experience.
+
+Beyond development, I’m a C++ problem solver and ECPC-qualified contestant, which strengthened my algorithmic thinking, problem-solving speed, and ability to handle complex challenges under pressure.
+
+I’ve also gained valuable industry exposure through training at Banque Misr, Orascom, and El-Orman, alongside certifications in Python from Microsoft and ITI.
+
+I’m passionate about continuous growth, writing clean code, and turning ideas into impactful products that solve real problems.`,
   },
 
   /* ── Skills ────────────────────────────────────────────────────── */

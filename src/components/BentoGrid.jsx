@@ -19,11 +19,13 @@ export default function BentoGrid() {
           viewport={{ once: true, margin: "-50px" }}
           className="col-span-1 md:col-span-2 row-span-2 glass rounded-3xl p-8 flex flex-col justify-between group hover:border-brand-400/50 transition-colors"
         >
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
-            <p className="text-gray-300 leading-relaxed text-lg">
-              {data.about.bio.split('\n')[0]}
-            </p>
+          <div className="flex-1 overflow-hidden flex flex-col">
+            <h2 className="text-3xl font-bold text-white mb-4 shrink-0">About Me</h2>
+            <div className="overflow-y-auto pr-2 custom-scrollbar flex-1">
+              <p className="text-gray-300 leading-relaxed text-sm whitespace-pre-line">
+                {data.about.bio}
+              </p>
+            </div>
           </div>
           <div className="flex items-center gap-4 mt-6">
             <img src={data.profileImage} alt="Profile" className="w-16 h-16 rounded-full border-2 border-brand-400 object-cover" />
