@@ -100,37 +100,43 @@ Currently a second-year student at Badr University in Assiut, I am constantly le
     },
   ],
 
-  /* ── Education & Certifications ────────────────────────────────── */
+  /* ── Education & Academic Courses ──────────────────────────────── */
   certifications: [
     {
-      title: "C++ The Complete Guide",
-      issuer: "Self-Study & Practice",
+      title: "Object-Oriented Programming (OOP)",
+      issuer: "Computer Science Curriculum",
       description:
-        "Mastered the depths of C++, from foundational syntax to advanced memory management and object-oriented programming paradigms.",
+        "Mastered advanced OOP paradigms in C++ and Java, focusing on inheritance, polymorphism, and abstraction to build scalable software architectures.",
     },
     {
       title: "Data Structures & Algorithms",
       issuer: "Continuous Learning",
       description:
-        "Extensive problem-solving and algorithmic training, crucial for competitive programming and building efficient software systems.",
+        "Extensive problem-solving training using arrays, linked lists, trees, and graphs, crucial for competitive programming (ECPC) and building efficient systems.",
+    },
+    {
+      title: "Digital Logic Design & Architecture",
+      issuer: "Computer Science Curriculum",
+      description:
+        "Deep understanding of logic gates, boolean algebra, sequential circuits, and the foundational architecture of modern computing systems.",
+    },
+    {
+      title: "Discrete Mathematics",
+      issuer: "Academic Foundation",
+      description:
+        "Strong mathematical foundation in logic, set theory, combinatorics, and graph theory, essential for advanced algorithmic thinking.",
     },
     {
       title: "Database System Concepts",
       issuer: "Academic & Practical",
       description:
-        "Comprehensive understanding of database design, normalization, relational algebra, and SQL optimization.",
+        "Comprehensive understanding of relational databases, schema normalization, E-R modeling, and complex SQL query optimization.",
     },
     {
       title: "Clean Code & Design Patterns",
       issuer: "Code Craftsmanship",
       description:
-        "Deep dive into software architecture, SOLID principles, and proven design patterns to build scalable and maintainable applications.",
-    },
-    {
-      title: "ITI Certificate",
-      issuer: "Information Technology Institute",
-      description:
-        "Earned a professional certificate from ITI, demonstrating proficiency in modern IT skills.",
+        "Deep dive into software architecture, SOLID principles, and proven design patterns to build maintainable enterprise-level applications.",
     },
   ],
 
