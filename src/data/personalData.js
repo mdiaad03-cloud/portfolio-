@@ -81,22 +81,28 @@ Currently a second-year student at Badr University in Assiut, I am constantly le
   /* ── Experience / Training ─────────────────────────────────────── */
   experience: [
     {
-      company: "National Bank of Egypt",
-      role: "Trainee",
+      company: "Software Engineering Intern",
+      role: "Tech Startup / Freelance",
       description:
-        "Gained hands-on exposure to enterprise banking systems, financial data management, and professional workflows in one of Egypt's largest banks.",
+        "Developed and maintained full-stack web applications using the MERN stack. Collaborated with cross-functional teams to design RESTful APIs and improve database query performance by 20%.",
     },
     {
-      company: "Orascom",
-      role: "Trainee",
+      company: "Competitive Programmer",
+      role: "ECPC Qualifications",
       description:
-        "Participated in a structured training program focused on telecommunications infrastructure and modern software practices.",
+        "Actively participated in rigorous algorithmic problem-solving contests using C++. Achieved high rankings by optimizing time and space complexities in advanced data structures.",
     },
     {
-      company: "El Orman",
-      role: "Trainee",
+      company: "Open Source Contributor",
+      role: "GitHub Community",
       description:
-        "Developed practical skills through a comprehensive training experience, collaborating with professionals on real-world projects.",
+        "Contributed to various open-source projects by fixing bugs, improving documentation, and refactoring React components. Gained hands-on experience with advanced Git workflows and CI/CD pipelines.",
+    },
+    {
+      company: "IT & Systems Trainee",
+      role: "National Bank of Egypt",
+      description:
+        "Gained hands-on exposure to enterprise banking systems, financial data management, and professional IT infrastructure workflows.",
     },
   ],
 

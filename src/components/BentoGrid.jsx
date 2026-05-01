@@ -107,15 +107,15 @@ export default function BentoGrid() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="col-span-1 md:col-span-1 lg:col-span-1 row-span-2 glass rounded-3xl p-6 flex flex-col group hover:border-accent-400/50 transition-colors"
+          className="col-span-1 md:col-span-1 lg:col-span-1 row-span-2 glass rounded-3xl p-6 flex flex-col group hover:border-accent-400/50 transition-colors overflow-hidden"
         >
-          <h3 className="text-xl font-bold text-white mb-6">Training</h3>
-          <div className="flex flex-col gap-6">
+          <h3 className="text-xl font-bold text-white mb-6">Training & Roles</h3>
+          <div className="flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar flex-1">
             {data.experience.map((exp, i) => (
-              <div key={i} className="bg-surface-800/50 p-4 rounded-2xl border border-white/5">
+              <div key={i} className="bg-surface-800/50 p-4 rounded-2xl border border-white/5 shrink-0">
                 <h4 className="font-bold text-white text-sm">{exp.company}</h4>
                 <p className="text-xs text-accent-400 mb-2">{exp.role}</p>
-                <p className="text-xs text-gray-400">{exp.description}</p>
+                <p className="text-xs text-gray-400 line-clamp-3 hover:line-clamp-none transition-all">{exp.description}</p>
               </div>
             ))}
           </div>
