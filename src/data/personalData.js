@@ -14,8 +14,17 @@ import {
   FaLinkedin,
   FaPython,
   FaDatabase,
-  FaLock,
   FaShieldAlt,
+  FaLaptopCode,
+  FaServer,
+  FaShoppingCart,
+  FaWindows,
+  FaWhatsapp,
+  FaGraduationCap,
+  FaAward,
+  FaTrophy,
+  FaBriefcase,
+  FaUniversity,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -28,7 +37,6 @@ import {
   SiDocker,
   SiRailway,
 } from "react-icons/si";
-import { FaCss3Alt } from "react-icons/fa";
 
 import profilePic from "../assets/profile.jpg";
 
@@ -37,154 +45,325 @@ const PROFILE_IMAGE = profilePic;
 const data = {
   name: "Mohamed Diaa El-Din Samy",
   arabicName: "محمد ضياء الدين سامي",
-  title: "Full-Stack Developer | .NET | React | Node.js | MongoDB",
+  title: "Full-Stack Developer | .NET • React • Node.js • MongoDB",
   id: "2024030095",
   location: "Cairo, Egypt",
   phone: "+201068646465",
+  whatsappUrl: "https://wa.me/201068646465?text=Hello%20Mohamed,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!",
+  email: "mdiaad03@gmail.com",
   university: "Badr University in Assiut",
   faculty: "Computer Science / Information Systems",
-  year: "Third-Year Student (Graduation: 2028)",
+  year: "Third-Year Student (Enrolled 2024, Graduating 2028)",
   profileImage: PROFILE_IMAGE,
 
   hero: {
     title: "Full-Stack Developer (.NET • React • Node.js • MongoDB)",
     subtitle:
-      "Engineering end-to-end web applications, secure REST APIs, payment & shipping integrations, and high-performance architectures.",
-    cta: "Explore My Projects",
+      "Engineering robust end-to-end applications, enterprise REST APIs, third-party payment/ERP integrations, and high-performance architectures.",
+    ctaProjects: "Explore Projects",
+    ctaContact: "Get in Touch",
+    ctaCv: "Download CV",
   },
 
   about: {
-    bio: `Full-Stack Developer and third-year Computer Science / Information Systems student at Badr University in Assiut (enrolled since 2024, expected graduation 2028).
+    title: "About Me",
+    role: "Full-Stack Software Engineer & Competitive Programmer",
+    bio: `Full-Stack Developer and third-year Computer Science / Information Systems student at Badr University in Assiut (enrolled since 2024, expected graduation: 2028).
 
-I specialize in building secure, end-to-end applications using React, Node.js/Express, ASP.NET Core, SQL Server, and MongoDB Atlas. My experience spans full REST API development, database architecture, third-party payment and shipping integrations, application security, automated testing, and cloud deployment.
+I bridge the gap between rigorous Computer Science theory and commercial, production-ready software engineering. I specialize in building end-to-end applications using React, Node.js/Express, ASP.NET Core, SQL Server, and MongoDB Atlas.
 
-Currently, I work as a Full-Stack Developer at C2A LAP, engineering an e-commerce platform and administrative dashboard with live analytics that helped accelerate financial decisions and increased sales, optimizing speed and website performance by 16%.
+In production environments, I developed commercial e-commerce storefronts and executive analytics dashboards for C2A LAP, integrating Paymob, InstaPay, Bosta shipping, and automated WhatsApp/email dispatch while enhancing site speed by 16%. I also engineered enterprise integration flows connecting donation call-center systems with Odoo ERP using Transactional Outbox and Integration Inbox patterns.
 
-I also designed enterprise integration flows connecting donation call-center systems with Odoo ERP using Transactional Outbox and Integration Inbox patterns with idempotent REST APIs.
-
-Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++, which refined my problem-solving speed, algorithmic optimization, and computational resilience under pressure.`,
+Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++, which instilled in me strong algorithmic thinking, optimal time/memory complexity awareness, and resilience when tackling complex architectural challenges.`,
+    highlights: [
+      { label: "Academic Standing", value: "3rd Year CS @ BUA" },
+      { label: "Competitive Programming", value: "ECPC / ICPC Qualifier" },
+      { label: "Performance Optimization", value: "+16% Speed Boost (C2A)" },
+      { label: "Fellowship Award", value: "DEPI MCIT Scholar" },
+    ],
   },
 
+  /* ── Services Section ────────────────────────────────────────── */
+  services: [
+    {
+      title: "Full-Stack Web Development",
+      description:
+        "Building fast, reactive, responsive web applications from scratch using React, Vite, Tailwind CSS, Node.js/Express, and ASP.NET Core Web APIs.",
+      icon: FaLaptopCode,
+      color: "#61DAFB",
+      features: ["Custom React & Vite Frontends", "Modular REST API Backends", "State Management & Responsive Design", "Bilingual RTL/LTR Architecture"],
+    },
+    {
+      title: "Enterprise API & ERP Integrations",
+      description:
+        "Designing resilient system-to-system integrations connecting internal workflows with Odoo ERP, payment processors, and automated notifications.",
+      icon: FaServer,
+      color: "#F59E0B",
+      features: ["Transactional Outbox & Inbox Patterns", "Idempotent Event Processing", "Odoo ERP Webhooks & Polling", "Reliable Fault-Tolerant Architectures"],
+    },
+    {
+      title: "Database Architecture & Optimization",
+      description:
+        "Designing normalized schemas, relational models in Microsoft SQL Server, and document structures in MongoDB Atlas with indexing and ACID compliance.",
+      icon: FaDatabase,
+      color: "#10B981",
+      features: ["SQL Server & MongoDB Atlas", "Schema Normalization & Indexing", "Transaction Management", "High-Throughput Query Optimization"],
+    },
+    {
+      title: "E-Commerce & Payment Gateways",
+      description:
+        "End-to-end online store solutions featuring administrative analytics, order tracking, Paymob, InstaPay, cash on delivery, and Bosta shipping API.",
+      icon: FaShoppingCart,
+      color: "#A855F7",
+      features: ["Paymob & InstaPay Checkout", "Bosta Shipping API Integration", "Admin Analytics & Profit Tracking", "WhatsApp & Nodemailer Alerts"],
+    },
+    {
+      title: "Application Security & Hardening",
+      description:
+        "Implementing defense-in-depth security standards to protect users and backend services against OWASP top vulnerabilities.",
+      icon: FaShieldAlt,
+      color: "#EF4444",
+      features: ["Stateless JWT Authentication", "CSRF Protection & bcrypt Hashing", "Role-Based Access Control (RBAC)", "Rate Limiting & SSRF Protections"],
+    },
+    {
+      title: "Desktop Enterprise Software",
+      description:
+        "Developing stable, offline-capable desktop management systems using C# and .NET Windows Forms integrated directly with Microsoft SQL Server.",
+      icon: FaWindows,
+      color: "#0078D4",
+      features: ["C# Windows Forms Applications", "ADO.NET & EF Core Persistence", "Custom Financial Reporting", "Relational Local/LAN Databases"],
+    },
+  ],
+
+  /* ── Skills & Tech Stack ─────────────────────────────────────── */
   skills: [
-    { name: "React & Vite", icon: FaReact, color: "#61DAFB" },
-    { name: "Node.js", icon: FaNodeJs, color: "#68A063" },
-    { name: "Express.js", icon: SiExpress, color: "#FFFFFF" },
-    { name: ".NET / ASP.NET Core", icon: SiDotnet, color: "#512BD4" },
-    { name: "MongoDB Atlas", icon: SiMongodb, color: "#47A248" },
-    { name: "SQL Server", icon: FaDatabase, color: "#CC292B" },
-    { name: "JavaScript (ES6+)", icon: SiJavascript, color: "#F7DF1E" },
-    { name: "C++ (Algorithmic)", icon: SiCplusplus, color: "#00599C" },
-    { name: "Python", icon: FaPython, color: "#3776AB" },
-    { name: "App Security & JWT", icon: FaShieldAlt, color: "#10B981" },
-    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-    { name: "Docker & Railway", icon: SiRailway, color: "#A855F7" },
-    { name: "Git & GitHub", icon: FaGitAlt, color: "#F05032" },
-    { name: "HTML5 / CSS3", icon: SiHtml5, color: "#E34F26" },
+    { name: "React & Vite", icon: FaReact, color: "#61DAFB", category: "Frontend" },
+    { name: "Node.js", icon: FaNodeJs, color: "#68A063", category: "Backend" },
+    { name: "Express.js", icon: SiExpress, color: "#FFFFFF", category: "Backend" },
+    { name: ".NET / ASP.NET Core", icon: SiDotnet, color: "#512BD4", category: "Backend" },
+    { name: "MongoDB Atlas", icon: SiMongodb, color: "#47A248", category: "Database" },
+    { name: "SQL Server", icon: FaDatabase, color: "#CC292B", category: "Database" },
+    { name: "JavaScript (ES6+)", icon: SiJavascript, color: "#F7DF1E", category: "Languages" },
+    { name: "C++ (Algorithmic)", icon: SiCplusplus, color: "#00599C", category: "Languages" },
+    { name: "Python", icon: FaPython, color: "#3776AB", category: "Languages" },
+    { name: "App Security & JWT", icon: FaShieldAlt, color: "#10B981", category: "Security" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", category: "Frontend" },
+    { name: "Docker & Railway", icon: SiRailway, color: "#A855F7", category: "DevOps" },
+    { name: "Git & GitHub", icon: FaGitAlt, color: "#F05032", category: "Tools" },
+    { name: "HTML5 / CSS3", icon: SiHtml5, color: "#E34F26", category: "Frontend" },
   ],
 
-  experience: [
-    {
-      company: "C2A LAP",
-      role: "Full-Stack Developer | Nov 2025 - Present",
-      description:
-        "Developed and maintain laptop e-commerce platform with React/Vite storefront & admin dashboard for products, orders, sales, expenses, and profit tracking. Built REST APIs in Node.js/Express, integrated Paymob, InstaPay, Bosta shipping, WhatsApp (UltraMsg) & Nodemailer, Excel import/export. Applied JWT, CSRF, RBAC, rate limiting, and SSRF protections on Railway. Boosted speed by 16%.",
-    },
-    {
-      company: "Donation Call-Center & Odoo ERP Integration",
-      role: "System & API Integration | Jul 2026 - Oct 2026",
-      description:
-        "Designed integration flow connecting donation call-center system with Odoo ERP using Transactional Outbox and Integration Inbox patterns. Defined batched event polling, idempotent processing, out-of-order event handling, and atomic bank-deposit allocation across multiple receipts.",
-    },
-    {
-      company: "El Orman Charity Association",
-      role: "Technical Training | Summer 2024 & Summer 2026",
-      description:
-        "Technical training on integration design between donation call-center systems and Odoo ERP, REST API event processing, and bank-deposit allocation workflows.",
-    },
-    {
-      company: "National Bank of Egypt (NBE)",
-      role: "Enterprise Systems Trainee | Jan 2025",
-      description:
-        "Gained hands-on exposure to enterprise banking systems, database security standards, financial compliance, and mission-critical workflows.",
-    },
-    {
-      company: "Orascom",
-      role: "Software & Telecom Trainee | Aug 2024",
-      description:
-        "Training exposure to telecommunications infrastructure, network operations, and modern software development practices.",
-    },
-    {
-      company: "DEPI - Digital Egypt Pioneers Initiative",
-      role: "Full-Stack Fellow (Round 5 - AST) | Jun 2026",
-      description:
-        "Enrolled in MCIT fellowship covering enterprise web architectures, clean code principles, full-stack technologies, and Agile/Scrum methodologies.",
-    },
-  ],
+  /* ── Education Section (Separated from About) ─────────────────── */
+  education: {
+    institution: "Badr University in Assiut (BUA)",
+    degree: "Bachelor of Science in Computer Science / Information Systems",
+    duration: "2024 – Present (Expected Graduation: 2028)",
+    status: "Third-Year Student (Currently Enrolled)",
+    description:
+      "Undertaking intensive academic study in Computer Science and Information Systems, mastering the foundational theoretical and practical pillars of software engineering.",
+    coreCourses: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming (OOP in C++ & Java)",
+      "Database Systems & Relational Schema Modeling",
+      "Computer Architecture & Digital Logic Design",
+      "Operating Systems & Process Management",
+      "Discrete Mathematics & Computational Logic",
+      "Software Engineering & Agile Methodologies",
+      "Computer Networks & Protocols",
+    ],
+  },
 
+  /* ── Certifications & Achievements ───────────────────────────── */
   certifications: [
     {
       title: "ICPC / ECPC Qualifier",
       issuer: "Egyptian Collegiate Programming Contest (Aug 2026)",
+      icon: FaTrophy,
       description:
-        "Qualified in national algorithmic programming contest using C++, solving advanced data structures, graph theory, and dynamic programming problems under strict time and memory constraints.",
+        "Official qualifier in the prestigious national algorithmic programming contest using C++, solving complex data structures and graph algorithms under strict constraints.",
     },
     {
-      title: "CS50 - ITI",
+      title: "CS50 - ITI Certificate",
       issuer: "Information Technology Institute (ITI)",
+      icon: FaGraduationCap,
       description:
-        "Comprehensive computer science foundations, algorithmic thinking, data structures, memory management, and software engineering principles.",
+        "Rigorous training covering computer science principles, memory layout, C, algorithms, and computational problem solving.",
     },
     {
       title: "Python Training - Microsoft",
       issuer: "Microsoft Online Spring Training Program",
+      icon: FaAward,
       description:
-        "Certified training in Python programming, data structures, scripting, and modular application development.",
+        "Certified training in Python programming, script automation, data structures, and modular system development.",
     },
     {
       title: "Problem Solving in C++",
-      issuer: "ITI Certificate",
+      issuer: "ITI Official Certificate",
+      icon: FaAward,
       description:
-        "Advanced algorithmic problem solving, computational complexity analysis, pointer manipulation, and OOP patterns in C++.",
+        "Advanced algorithmic problem solving, pointer manipulation, time/space complexity optimization, and competitive paradigms.",
     },
     {
       title: "React Training - El Rowad",
       issuer: "El Rowad (Jun 2026)",
+      icon: FaAward,
       description:
-        "Modern component lifecycle, hooks, state management, responsive UI development, and API integration in React.",
+        "Professional certification covering React component architecture, custom hooks, global state, and modern UI engineering.",
     },
   ],
 
+  /* ── Work Experience ─────────────────────────────────────────── */
+  workExperience: [
+    {
+      role: "Full-Stack Developer",
+      company: "C2A LAP",
+      period: "Nov 2025 – Present",
+      type: "Commercial Production Platform",
+      points: [
+        "Developed and actively maintain a high-end laptop e-commerce platform with a React/Vite storefront and an administrative analytics dashboard.",
+        "Built executive dashboard analytics to clarify where money is spent, monitor sales and profit flows, and support faster business decision-making, directly contributing to increased sales.",
+        "Engineered backend REST API modules for authentication, users, products, sales, online orders, shipping, and storefront settings using Node.js & Express.js.",
+        "Implemented real-time product filtration, cart, checkout, order tracking, Arabic/English bilingual interface, and dark/light themes.",
+        "Integrated Paymob, InstaPay, cash on delivery, Bosta shipping API, automated WhatsApp notifications (UltraMsg), and Nodemailer alerts.",
+        "Supported Excel inventory import/export and batch order operations for seamless store management.",
+        "Hardened system security with JWT authentication, CSRF protection, password hashing (bcrypt), RBAC, rate limiting, input sanitization, and SSRF protections deployed on Railway.",
+        "Improved website performance and loading speed by 16% through asset optimization and query caching.",
+      ],
+    },
+    {
+      role: "System & Integration Architect",
+      company: "Donation Call-Center & Odoo ERP Integration",
+      period: "Jul 2026 – Oct 2026",
+      type: "Enterprise Integration Project",
+      points: [
+        "Designed and implemented an integration flow connecting a donation call-center system with Odoo ERP using Transactional Outbox and Integration Inbox patterns.",
+        "Defined REST API contracts for batched event polling and acknowledgement, with event IDs, semantic versioning, and idempotent processing.",
+        "Engineered robust handling for failed and out-of-order events with retry queues.",
+        "Designed atomic bank-deposit allocation across multiple receipts to ensure financial consistency.",
+      ],
+    },
+  ],
+
+  /* ── Professional Training & Internships (Expanded space) ─────── */
+  training: [
+    {
+      role: "Enterprise Banking Systems Trainee",
+      organization: "National Bank of Egypt (NBE)",
+      period: "Jan 2025",
+      badge: "Banking Infrastructure",
+      description:
+        "Gained direct, hands-on exposure to enterprise banking IT systems, mission-critical financial database security, transactional integrity, regulatory compliance, and banking workflows.",
+    },
+    {
+      role: "Software & Telecommunications Trainee",
+      organization: "Orascom",
+      period: "Aug 2024",
+      badge: "Telecom Infrastructure",
+      description:
+        "Extensive industry training covering large-scale telecommunications infrastructure, network operations, cloud communication protocols, and modern enterprise software practices.",
+    },
+    {
+      role: "Technical Integration Trainee",
+      organization: "El Orman Charity Association",
+      period: "Summer 2024 & Summer 2026",
+      badge: "ERP & Systems",
+      description:
+        "Specialized training in integration design between call-center donation software and Odoo ERP, REST API event processing, and automated bank-deposit allocation workflows.",
+    },
+    {
+      role: "Full-Stack Software Fellow",
+      organization: "Digital Egypt Pioneers Initiative (DEPI) - Round 5",
+      period: "Jun 2026",
+      badge: "MCIT Fellowship",
+      description:
+        "Selected for the Ministry of Communications & IT (MCIT) fellowship (AST track) covering enterprise web architectures, clean code design patterns, full-stack technologies, and Agile/Scrum.",
+    },
+    {
+      role: "Modern Frontend Trainee",
+      organization: "React Training - El Rowad",
+      period: "Jun 2026",
+      badge: "Frontend Excellence",
+      description:
+        "Intensive practical training focusing on modern React 19 architecture, component lifecycles, advanced state management, and high-performance UI optimization.",
+    },
+  ],
+
+  /* ── Featured Projects (Positioned after Education & Experience) ── */
   projects: [
     {
-      name: "C2A LAP — E-Commerce & Admin Analytics Platform",
+      id: "c2a-lap",
+      name: "C2A LAP — Full-Stack E-Commerce & Analytics Platform",
+      category: "Full-Stack Web App",
+      badge: "Production Platform",
+      period: "Nov 2025 – Present",
       description:
-        "Production e-commerce platform for high-end laptops with a React/Vite storefront and complete administrative analytics dashboard for tracking sales, profit margins, expenses, stock, and orders. Features Paymob & InstaPay checkout, Bosta shipping, WhatsApp notifications, and Railway deployment.",
+        "Commercial laptop e-commerce platform and executive administrative dashboard. Provides real-time analytics on sales, expense tracking, and profit margins. Features multi-method checkout (Paymob, InstaPay, COD), Bosta shipping, WhatsApp notifications, and Railway deployment.",
+      keyFeatures: [
+        "React & Vite storefront with real-time product search and Arabic/English bilingual UI",
+        "Administrative dashboard tracking revenue, expenses, stock, and live profit flows",
+        "Automated Paymob & InstaPay payment verification and Bosta shipping dispatch",
+        "Automated WhatsApp (UltraMsg) and email notifications for order lifecycle",
+        "Applied JWT, CSRF, RBAC, bcrypt, rate limiting, and SSRF protections on Railway",
+        "16% boost in overall page speed and database query execution",
+      ],
       github: "https://github.com/mdiaad03-cloud/C2A-LAP-V1.1",
-      tags: ["React", "Node.js", "Express", "MongoDB", "Paymob", "Bosta", "Railway"],
+      tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "Paymob", "Bosta API", "Railway"],
     },
     {
+      id: "odoo-integration",
       name: "Donation Call-Center & Odoo ERP Integration API",
+      category: "Enterprise Integration",
+      badge: "Architectural API",
+      period: "Jul 2026 – Oct 2026",
       description:
-        "Enterprise integration pipeline connecting donation call-centers with Odoo ERP utilizing Transactional Outbox and Integration Inbox patterns. Implements batched polling, event ID versioning, idempotent execution, and atomic bank-deposit allocation across receipts.",
+        "High-reliability enterprise integration bridge connecting donation call centers with Odoo ERP. Uses Transactional Outbox and Integration Inbox patterns to ensure zero data loss during network disruptions and idempotent event processing.",
+      keyFeatures: [
+        "Transactional Outbox pattern for guaranteed message delivery between distributed databases",
+        "Integration Inbox pattern with idempotency keys preventing duplicate financial records",
+        "Batched event polling and acknowledgement with semantic versioning",
+        "Atomic bank-deposit allocation across multiple donation receipts",
+        "Detailed logging, retry mechanisms, and dead-letter queue for out-of-order events",
+      ],
       github: "https://github.com/mdiaad03-cloud",
-      tags: ["Node.js", "Odoo ERP", "REST APIs", "Outbox Pattern", "Idempotency"],
+      tags: ["Node.js", "Express", "Odoo ERP", "REST APIs", "Outbox Pattern", "Idempotency"],
     },
     {
+      id: "windows-forms",
       name: "C# Windows Forms Enterprise Application",
+      category: "Desktop & .NET",
+      badge: "Desktop Software",
+      period: "Jul 2025 – Oct 2025",
       description:
-        "Desktop enterprise management software built with C# Windows Forms and Microsoft SQL Server. Features robust CRUD operations, transactional consistency, normalized database schema, and custom financial reporting.",
+        "Windows desktop software built with C# and Microsoft SQL Server. Features robust CRUD operations, multi-table transactions, database normalization, and custom financial reporting modules for local enterprise operations.",
+      keyFeatures: [
+        "Clean C# Windows Forms user interface with interactive data grids",
+        "Microsoft SQL Server relational database integration with stored procedures",
+        "Multi-table transactional operations ensuring ACID guarantees",
+        "User role authentication, audit trail logging, and report exports",
+      ],
       github: "https://github.com/mdiaad03-cloud",
-      tags: ["C#", ".NET", "Windows Forms", "SQL Server", "Database Design"],
+      tags: ["C#", ".NET", "Windows Forms", "SQL Server", "ADO.NET", "Database Design"],
     },
     {
+      id: "ecpc-engine",
       name: "ECPC Algorithmic Problem Solving Engine",
+      category: "Competitive Programming",
+      badge: "ICPC / ECPC Qualifier",
+      period: "2024 – Present",
       description:
-        "Competitive programming repository featuring hundreds of solved algorithmic problems in C++ covering graph algorithms (Dijkstra, BFS/DFS), dynamic programming, segment trees, and number theory with sub-second performance.",
+        "Repository of hundreds of complex algorithmic problem solutions in modern C++. Covers advanced graph algorithms, dynamic programming, segment trees, and mathematical optimization evaluated under sub-second execution limits.",
+      keyFeatures: [
+        "Graph theory implementations: Dijkstra, Bellman-Ford, Floyd-Warshall, BFS/DFS, MST",
+        "Dynamic programming algorithms with state compression and memoization",
+        "Advanced data structures: Segment Trees, Fenwick Trees, Disjoint Set Union (DSU)",
+        "Memory efficiency and pointer management under strict competition memory limits",
+      ],
       github: "https://github.com/mdiaad03-cloud",
-      tags: ["C++", "Algorithms", "Data Structures", "ECPC Qualifier"],
+      tags: ["C++ 17/20", "Algorithms", "Data Structures", "ECPC Qualifier", "Problem Solving"],
     },
   ],
 
+  /* ── Socials ─────────────────────────────────────────────────── */
   socials: [
     {
       name: "GitHub",
@@ -198,12 +377,17 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     },
   ],
 
+  /* ── High-Impact Call To Action & Contact ────────────────────── */
   contact: {
+    headline: "Have an Ambitious Project or Engineering Role?",
+    subheadline:
+      "I'm available for Full-Stack development positions, enterprise system integrations, and freelance contracts. Let's discuss your roadmap.",
     email: "mdiaad03@gmail.com",
     phone: "+201068646465",
+    whatsapp: "+201068646465",
     location: "Cairo, Egypt",
-    message:
-      "I am available for full-stack engineering roles, enterprise REST API development, and high-impact software projects. Let's build something exceptional together!",
+    availability: "Available for Full-Stack Roles, Enterprise Integrations & Contracts",
+    responseTime: "Guaranteed reply within 24 hours",
   },
 };
 
