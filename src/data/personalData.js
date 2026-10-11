@@ -52,8 +52,8 @@ const data = {
   email: "mdiaad03@gmail.com",
   university: "Badr University in Assiut",
   faculty: "Computer Science / Information Systems",
-  year: "Third-Year Student (GPA: 3.3 / 4.0)",
-  gpa: "3.3",
+  year: "Third-Year Student",
+  gpa: "3.3 / 4.0",
   profileImage: PROFILE_IMAGE,
 
   hero: {
@@ -153,12 +153,12 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     { name: "HTML5 / CSS3", icon: SiHtml5, color: "#E34F26", category: "Frontend" },
   ],
 
-  /* ── Education Section (With GPA 3.3) ────────────────────────── */
+  /* ── Education Section ───────────────────────────────────────── */
   education: {
     institution: "Badr University in Assiut (BUA)",
     degree: "Bachelor of Science in Computer Science / Information Systems",
     duration: "2024 – Present (Expected Graduation: 2028)",
-    status: "Third-Year Student (GPA: 3.3 / 4.0)",
+    status: "Third-Year Student",
     gpa: "3.3 / 4.0",
     description:
       "Undertaking intensive academic study in Computer Science and Information Systems, mastering the foundational theoretical and practical pillars of software engineering.",
@@ -244,7 +244,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     },
   ],
 
-  /* ── Professional Training & Internships (DEPI - 100% English) ─ */
+  /* ── Professional Training & Internships ─────────────────────── */
   training: [
     {
       role: "Full-Stack Software Fellow",
@@ -280,7 +280,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     },
   ],
 
-  /* ── Featured Projects (ECPC without github repo) ─────────────── */
+  /* ── Featured Projects ────────────────────────────────────────── */
   projects: [
     {
       id: "c2a-lap",
@@ -349,7 +349,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
         "Advanced data structures: Segment Trees, Fenwick Trees, Disjoint Set Union (DSU)",
         "Memory efficiency and pointer management under strict competition memory limits",
       ],
-      github: null, // Official contest qualification, no GitHub repo
+      github: null,
       isCompetition: true,
       tags: ["C++ 17/20", "Algorithms", "Data Structures", "ECPC Qualifier", "Problem Solving"],
     },

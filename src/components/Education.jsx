@@ -3,7 +3,7 @@
  * Portfolio of Mohamed Diaa El-Din Samy
  * Education Component — Dedicated section for academic education at
  * Badr University in Assiut (BUA) and verified professional certifications.
- * Completely separated from About to provide maximum prominence.
+ * Clean, non-repetitive badges and layout.
  * =====================================================================
  */
 
@@ -59,12 +59,13 @@ export default function Education() {
             </div>
           </div>
 
+          {/* Clean, Non-Repetitive Badges */}
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <span className="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-gray-300 font-medium">
               📅 {edu.duration}
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-xs font-semibold text-emerald-400">
-              🎓 {edu.status}
+              🎓 Third-Year Student
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-brand-400/15 border border-brand-400/30 text-xs font-bold text-brand-300 font-mono">
               ⭐ GPA: {edu.gpa}
