@@ -1,4 +1,4 @@
-/*
+﻿/*
  * =====================================================================
  * Portfolio of Mohamed Diaa El-Din Samy
  * Computer Science / Information Systems @ Badr University in Assiut
@@ -19,12 +19,9 @@ import {
   FaServer,
   FaShoppingCart,
   FaWindows,
-  FaWhatsapp,
   FaGraduationCap,
   FaAward,
   FaTrophy,
-  FaBriefcase,
-  FaUniversity,
 } from "react-icons/fa";
 import {
   SiExpress,
@@ -34,7 +31,6 @@ import {
   SiJavascript,
   SiHtml5,
   SiDotnet,
-  SiDocker,
   SiRailway,
 } from "react-icons/si";
 
@@ -177,11 +173,13 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
   /* ── Certifications & Achievements ───────────────────────────── */
   certifications: [
     {
-      title: "ICPC / ECPC Qualifier",
-      issuer: "Egyptian Collegiate Programming Contest (Aug 2026)",
+      title: "ICPC / ECPC Qualifier - Honorable Mention",
+      issuer: "Egyptian Collegiate Programming Contest (ICPC Foundation • Aug 2026)",
       icon: FaTrophy,
+      certificateUrl: "ICPC_ECPC_Certificate.pdf",
+      certificateImage: "images/icpc_certificate.png",
       description:
-        "Official qualifier in the prestigious national algorithmic programming contest using C++, solving complex data structures and graph algorithms under strict constraints.",
+        "Official qualifier in the prestigious national algorithmic programming contest representing Badr University in Assiut. Awarded Honorable Mention on Day 7 (19 August 2026).",
     },
     {
       title: "CS50 - ITI Certificate",
@@ -315,7 +313,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
         "Atomic bank-deposit allocation across multiple donation receipts",
         "Detailed logging, retry mechanisms, and dead-letter queue for out-of-order events",
       ],
-      github: "https://github.com/mdiaad03-cloud",
+      github: "https://github.com/mdiaad03-cloud/donation-odoo-erp-integration",
       tags: ["Node.js", "Express", "Odoo ERP", "REST APIs", "Outbox Pattern", "Idempotency"],
     },
     {
@@ -325,33 +323,38 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
       badge: "Desktop Software",
       period: "Jul 2025 – Oct 2025",
       description:
-        "Windows desktop software built with C# and Microsoft SQL Server. Features robust CRUD operations, multi-table transactions, database normalization, and custom financial reporting modules for local enterprise operations.",
+        "Windows desktop banking & account management software built with C# and Microsoft SQL Server. Features robust CRUD operations, multi-table transactions, database normalization, and custom financial reporting modules for local enterprise operations.",
       keyFeatures: [
         "Clean C# Windows Forms user interface with interactive data grids",
         "Microsoft SQL Server relational database integration with stored procedures",
         "Multi-table transactional operations ensuring ACID guarantees",
         "User role authentication, audit trail logging, and report exports",
       ],
-      github: "https://github.com/mdiaad03-cloud",
+      github: "https://github.com/mdiaad03-cloud/csharp-windows-forms-banking",
       tags: ["C#", ".NET", "Windows Forms", "SQL Server", "ADO.NET", "Database Design"],
     },
     {
       id: "ecpc-engine",
-      name: "ECPC Algorithmic Problem Solving Engine",
+      name: "ICPC / ECPC Competitive Programming & Problem Solving",
       category: "Competitive Programming",
-      badge: "ECPC 2026 Qualifier",
+      badge: "ICPC 2026 Qualifier",
       period: "2024 – Present",
       description:
-        "Extensive problem-solving track in modern C++ qualifying for the Egyptian Collegiate Programming Contest (ECPC). Covers advanced graph algorithms, dynamic programming, segment trees, and mathematical optimization evaluated under sub-second execution limits.",
+        "Official qualifier in the Egyptian Collegiate Programming Contest (ECPC / ICPC Foundation) representing Badr University in Assiut. Awarded Honorable Mention on August 19, 2026 (Day 7). Rigorous competitive problem-solving track in modern C++ covering advanced graph algorithms, dynamic programming, segment trees, and mathematical optimization evaluated under sub-second execution limits.",
       keyFeatures: [
-        "Graph theory implementations: Dijkstra, Bellman-Ford, Floyd-Warshall, BFS/DFS, MST",
+        "Official Certificate of Achievement - Honorable Mention (Day 7, 19 August 2026)",
+        "Advanced graph theory: Dijkstra, Bellman-Ford, Floyd-Warshall, BFS/DFS, Minimum Spanning Tree",
         "Dynamic programming algorithms with state compression and memoization",
         "Advanced data structures: Segment Trees, Fenwick Trees, Disjoint Set Union (DSU)",
-        "Memory efficiency and pointer management under strict competition memory limits",
+        "Strict time and memory complexity optimization under ICPC competition standards",
       ],
       github: null,
+      certificateUrl: "ICPC_ECPC_Certificate.pdf",
+      certificateImage: "images/icpc_certificate.png",
+      certificateTitle: "The 2026 ICPC ECPC Qualifications - Honorable Mention",
+      certificateDate: "19 August 2026",
       isCompetition: true,
-      tags: ["C++ 17/20", "Algorithms", "Data Structures", "ECPC Qualifier", "Problem Solving"],
+      tags: ["C++ 17/20", "Algorithms", "Data Structures", "ICPC Qualifier", "ECPC 2026", "Honorable Mention"],
     },
   ],
 

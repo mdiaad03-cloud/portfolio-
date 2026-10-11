@@ -1,14 +1,14 @@
-/*
+﻿/*
  * =====================================================================
  * Portfolio of Mohamed Diaa El-Din Samy
  * Education Component — Dedicated section for academic education at
  * Badr University in Assiut (BUA) and verified professional certifications.
- * Clean, non-repetitive badges and layout.
+ * Clean, non-repetitive badges and layout with verified certificate links.
  * =====================================================================
  */
 
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaUniversity, FaBookOpen } from "react-icons/fa";
+import { FaGraduationCap, FaUniversity, FaBookOpen, FaFilePdf, FaExternalLinkAlt } from "react-icons/fa";
 import data from "../data/personalData";
 
 export default function Education() {
@@ -114,6 +114,10 @@ export default function Education() {
 
           {data.certifications.map((cert) => {
             const Icon = cert.icon;
+            const certLink = cert.certificateUrl
+              ? `${import.meta.env.BASE_URL}${cert.certificateUrl}`
+              : null;
+
             return (
               <div
                 key={cert.title}
@@ -123,10 +127,25 @@ export default function Education() {
                   <div className="w-10 h-10 rounded-xl bg-accent-400/15 border border-accent-400/30 flex items-center justify-center text-lg text-accent-400 shrink-0 group-hover:scale-110 transition-transform">
                     <Icon />
                   </div>
-                  <div>
-                    <h4 className="text-base font-bold text-white group-hover:text-accent-300 transition-colors">
-                      {cert.title}
-                    </h4>
+                  <div className="flex-1">
+                    <div className="flex items-start justify-between gap-2">
+                      <h4 className="text-base font-bold text-white group-hover:text-accent-300 transition-colors">
+                        {cert.title}
+                      </h4>
+                      {certLink && (
+                        <a
+                          href={certLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-400/20 hover:bg-amber-400/30 text-amber-300 border border-amber-400/30 text-[11px] font-bold transition-all hover:scale-105"
+                          title="View Official Certificate PDF"
+                        >
+                          <FaFilePdf className="text-xs text-red-300" />
+                          <span>View Certificate</span>
+                          <FaExternalLinkAlt className="text-[9px]" />
+                        </a>
+                      )}
+                    </div>
                     <p className="text-xs font-medium text-brand-400 mt-0.5">
                       {cert.issuer}
                     </p>
