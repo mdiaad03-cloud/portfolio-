@@ -3,7 +3,6 @@
  * Portfolio of Mohamed Diaa El-Din Samy
  * About Component — Dedicated section for personal bio, engineering
  * mindset, and high-resolution photo with click-to-enlarge Lightbox Modal.
- * Education is cleanly separated into its own distinct section.
  * =====================================================================
  */
 
@@ -54,7 +53,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/avatar:opacity-100 flex flex-col items-center justify-center text-white transition-opacity duration-300 gap-2">
                   <BsArrowsFullscreen className="text-2xl text-brand-400" />
                   <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-black/70 border border-white/20">
-                    اضغط للتكبير • Zoom In
+                    Zoom In
                   </span>
                 </div>
               </button>
@@ -63,14 +62,6 @@ export default function About() {
             <h3 className="text-xl font-bold text-white mt-5">{data.name}</h3>
             <p className="text-sm font-medium text-brand-400 mt-0.5">{data.title}</p>
             <p className="text-xs text-gray-400 mt-1">{data.location} • {data.university}</p>
-
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="mt-3 text-xs text-brand-400 hover:text-white underline cursor-pointer flex items-center gap-1 font-medium"
-            >
-              <BsArrowsFullscreen className="text-[11px]" />
-              <span>عرض الصورة بالحجم الكامل</span>
-            </button>
           </div>
 
           {/* Right Column: Detailed Biography & Pillars (Span 8) */}
