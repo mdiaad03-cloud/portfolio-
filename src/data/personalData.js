@@ -44,7 +44,6 @@ const PROFILE_IMAGE = profilePic;
 
 const data = {
   name: "Mohamed Diaa El-Din Samy",
-  arabicName: "محمد ضياء الدين سامي",
   title: "Full-Stack Developer | .NET • React • Node.js • MongoDB",
   id: "2024030095",
   location: "Cairo, Egypt",
@@ -75,12 +74,12 @@ I bridge the gap between rigorous Computer Science theory and commercial, produc
 
 In production environments, I engineered commercial e-commerce storefronts and executive analytics dashboards, integrating Paymob, InstaPay, Bosta shipping, and automated WhatsApp/email notifications. I also designed enterprise integration flows connecting donation call-center systems with Odoo ERP using Transactional Outbox and Integration Inbox patterns.
 
-Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++, which instilled in me strong algorithmic thinking, optimal time/memory complexity awareness, and resilience when tackling complex architectural challenges.`,
+Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++, which instilled in me deep algorithmic thinking, optimal time/memory complexity awareness, and resilience when tackling complex architectural challenges.`,
     highlights: [
       { label: "Academic Standing", value: "3rd Year (GPA 3.3)" },
       { label: "Competitive Programming", value: "ECPC / ICPC Qualifier" },
       { label: "Full-Stack Architecture", value: ".NET & MERN Specialist" },
-      { label: "Fellowship Award", value: "رواد مصر الرقمية (DEPI)" },
+      { label: "Fellowship Award", value: "DEPI - MCIT Egypt" },
     ],
   },
 
@@ -92,7 +91,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
         "Building fast, reactive, responsive web applications from scratch using React, Vite, Tailwind CSS, Node.js/Express, and ASP.NET Core Web APIs.",
       icon: FaLaptopCode,
       color: "#61DAFB",
-      features: ["Custom React & Vite Frontends", "Modular REST API Backends", "State Management & Responsive Design", "Bilingual RTL/LTR Architecture"],
+      features: ["Custom React & Vite Frontends", "Modular REST API Backends", "State Management & Responsive Design", "Clean Component Architecture"],
     },
     {
       title: "Enterprise API & ERP Integrations",
@@ -192,11 +191,11 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
         "Rigorous training covering computer science principles, memory layout, C, algorithms, and computational problem solving.",
     },
     {
-      title: "شهادة رواد مصر الرقمية (DEPI)",
-      issuer: "مبادرة رواد مصر الرقمية - وزارة الاتصالات وتكنولوجيا المعلومات",
+      title: "Digital Egypt Pioneers Initiative (DEPI) Certificate",
+      issuer: "Ministry of Communications and Information Technology (MCIT)",
       icon: FaAward,
       description:
-        "شهادة معتمدة من مبادرة رواد مصر الرقمية (DEPI) برعاية وزارة الاتصالات وتكنولوجيا المعلومات في تطوير وهندسة برمجيات الويب المتكاملة والـ React.",
+        "Accredited certification from the Digital Egypt Pioneers Initiative (DEPI) under MCIT in full-stack architecture, clean code standards, and modern React development.",
     },
     {
       title: "Python Training - Microsoft",
@@ -225,7 +224,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
         "Developed and actively maintain a laptop e-commerce platform with a React/Vite storefront and an administrative analytics dashboard.",
         "Built executive dashboard analytics to clarify where money is spent, monitor sales and profit flows, and support faster business decision-making.",
         "Engineered backend REST API modules for authentication, users, products, sales, online orders, shipping, and storefront settings using Node.js & Express.js.",
-        "Implemented real-time product filtration, cart, checkout, order tracking, Arabic/English bilingual interface, and dark/light themes.",
+        "Implemented real-time product filtration, cart, checkout, order tracking, and dark/light themes.",
         "Integrated Paymob, InstaPay, cash on delivery, Bosta shipping API, automated WhatsApp notifications (UltraMsg), and Nodemailer alerts.",
         "Supported Excel inventory import/export and batch order operations for seamless store management.",
         "Hardened system security with JWT authentication, CSRF protection, password hashing (bcrypt), RBAC, rate limiting, input sanitization, and SSRF protections deployed on Railway.",
@@ -245,15 +244,15 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     },
   ],
 
-  /* ── Professional Training & Internships (DEPI - رواد مصر الرقمية) ─ */
+  /* ── Professional Training & Internships (DEPI - 100% English) ─ */
   training: [
     {
       role: "Full-Stack Software Fellow",
-      organization: "مبادرة رواد مصر الرقمية (DEPI) - Round 5",
+      organization: "Digital Egypt Pioneers Initiative (DEPI) - Round 5",
       period: "Jun 2026",
-      badge: "رواد مصر الرقمية",
+      badge: "DEPI Fellowship",
       description:
-        "الالتحاق بمبادرة رواد مصر الرقمية (DEPI) برعاية وزارة الاتصالات وتكنولوجيا المعلومات (MCIT) - مسار AST، لدراسة معمارية برمجيات المؤسسات، وتطوير الويب المتكامل، وتقنيات React، وتطبيق أفضل معايير الكود النظيف ومنهجيات Agile/Scrum.",
+        "Selected for the Ministry of Communications & IT (MCIT) fellowship (AST track) covering enterprise web architectures, clean code design patterns, full-stack technologies, and Agile/Scrum.",
     },
     {
       role: "Enterprise Banking Systems Trainee",
@@ -281,7 +280,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     },
   ],
 
-  /* ── Featured Projects ────────────────────────────────────────── */
+  /* ── Featured Projects (ECPC without github repo) ─────────────── */
   projects: [
     {
       id: "c2a-lap",
@@ -292,7 +291,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
       description:
         "Commercial laptop e-commerce platform and executive administrative dashboard. Provides real-time analytics on sales, expense tracking, and profit margins. Features multi-method checkout (Paymob, InstaPay, COD), Bosta shipping, WhatsApp notifications, and Railway deployment.",
       keyFeatures: [
-        "React & Vite storefront with real-time product search and Arabic/English bilingual UI",
+        "React & Vite storefront with real-time product search and responsive UI",
         "Administrative dashboard tracking revenue, expenses, stock, and live profit flows",
         "Automated Paymob & InstaPay payment verification and Bosta shipping dispatch",
         "Automated WhatsApp (UltraMsg) and email notifications for order lifecycle",
@@ -340,17 +339,18 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
       id: "ecpc-engine",
       name: "ECPC Algorithmic Problem Solving Engine",
       category: "Competitive Programming",
-      badge: "ICPC / ECPC Qualifier",
+      badge: "ECPC 2026 Qualifier",
       period: "2024 – Present",
       description:
-        "Repository of hundreds of complex algorithmic problem solutions in modern C++. Covers advanced graph algorithms, dynamic programming, segment trees, and mathematical optimization evaluated under sub-second execution limits.",
+        "Extensive problem-solving track in modern C++ qualifying for the Egyptian Collegiate Programming Contest (ECPC). Covers advanced graph algorithms, dynamic programming, segment trees, and mathematical optimization evaluated under sub-second execution limits.",
       keyFeatures: [
         "Graph theory implementations: Dijkstra, Bellman-Ford, Floyd-Warshall, BFS/DFS, MST",
         "Dynamic programming algorithms with state compression and memoization",
         "Advanced data structures: Segment Trees, Fenwick Trees, Disjoint Set Union (DSU)",
         "Memory efficiency and pointer management under strict competition memory limits",
       ],
-      github: "https://github.com/mdiaad03-cloud",
+      github: null, // Official contest qualification, no GitHub repo
+      isCompetition: true,
       tags: ["C++ 17/20", "Algorithms", "Data Structures", "ECPC Qualifier", "Problem Solving"],
     },
   ],

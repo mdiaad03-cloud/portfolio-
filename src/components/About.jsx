@@ -3,6 +3,7 @@
  * Portfolio of Mohamed Diaa El-Din Samy
  * About Component — Dedicated section for personal bio, engineering
  * mindset, and high-resolution photo with click-to-enlarge Lightbox Modal.
+ * 100% English.
  * =====================================================================
  */
 
@@ -42,7 +43,7 @@ export default function About() {
                 type="button"
                 onClick={() => setIsModalOpen(true)}
                 className="relative block rounded-3xl overflow-hidden border-2 border-brand-400/60 shadow-2xl shadow-brand-400/20 cursor-zoom-in transition-all duration-300 group-hover/avatar:scale-105 group-hover/avatar:border-brand-400 focus:outline-none focus:ring-4 focus:ring-brand-400/40"
-                title="اضغط لتكبير الصورة / Click to view in full resolution"
+                title="Click to view photo in full resolution"
               >
                 <img
                   src={data.profileImage}
@@ -81,7 +82,7 @@ export default function About() {
               </p>
             </div>
 
-            {/* Quick Credentials Grid (Updated: GPA 3.3, ECPC, DEPI رواد مصر الرقمية, Full-Stack) */}
+            {/* Quick Credentials Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 mt-8 pt-6 border-t border-white/10">
               <div className="bg-surface-800/80 p-3.5 rounded-2xl border border-white/5 text-center">
                 <FaGraduationCap className="text-xl text-brand-400 mx-auto mb-1.5" />
@@ -98,7 +99,7 @@ export default function About() {
               <div className="bg-surface-800/80 p-3.5 rounded-2xl border border-white/5 text-center">
                 <FaLaptopCode className="text-xl text-purple-400 mx-auto mb-1.5" />
                 <div className="text-lg font-bold text-white">DEPI</div>
-                <div className="text-[11px] text-brand-300 font-semibold">رواد مصر الرقمية</div>
+                <div className="text-[11px] text-brand-300 font-semibold">MCIT Fellowship</div>
               </div>
 
               <div className="bg-surface-800/80 p-3.5 rounded-2xl border border-white/5 text-center">

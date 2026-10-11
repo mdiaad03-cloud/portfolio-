@@ -4,6 +4,7 @@
  * Projects Component — Positioned AFTER Education & Experience.
  * Features an interactive Project Flipper with Next & Previous buttons,
  * project indicators, category filters, and spacious comfortable layouts.
+ * 100% English.
  * =====================================================================
  */
 
@@ -16,7 +17,7 @@ import {
   HiCode,
   HiCheckCircle,
 } from "react-icons/hi";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTrophy } from "react-icons/fa";
 import data from "../data/personalData";
 
 export default function Projects() {
@@ -54,8 +55,8 @@ export default function Projects() {
           <button
             onClick={handlePrev}
             className="w-12 h-12 rounded-2xl bg-surface-800 hover:bg-brand-400/20 border border-white/10 hover:border-brand-400/40 text-white flex items-center justify-center transition-all duration-300 hover:scale-105 shadow-lg group"
-            aria-label="Previous Project (المشروع السابق)"
-            title="المشروع السابق (Previous)"
+            aria-label="Previous Project"
+            title="Previous Project"
           >
             <HiChevronLeft className="text-2xl group-hover:-translate-x-0.5 transition-transform" />
           </button>
@@ -70,8 +71,8 @@ export default function Projects() {
           <button
             onClick={handleNext}
             className="w-12 h-12 rounded-2xl bg-surface-800 hover:bg-brand-400/20 border border-white/10 hover:border-brand-400/40 text-white flex items-center justify-center transition-all duration-300 hover:scale-105 shadow-lg group"
-            aria-label="Next Project (المشروع التالي)"
-            title="المشروع التالي (Next)"
+            aria-label="Next Project"
+            title="Next Project"
           >
             <HiChevronRight className="text-2xl group-hover:translate-x-0.5 transition-transform" />
           </button>
@@ -143,16 +144,24 @@ export default function Projects() {
               ))}
             </div>
 
-            <a
-              href={currentProject.github}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-400 to-accent-400 text-white font-bold text-sm shadow-lg shadow-brand-400/25 hover:shadow-brand-400/50 hover:scale-105 transition-all duration-300"
-            >
-              <FaGithub className="text-base" />
-              <span>View Repository</span>
-              <HiExternalLink className="text-base" />
-            </a>
+            {/* Check if project has a GitHub repo or is an official contest qualification */}
+            {currentProject.github ? (
+              <a
+                href={currentProject.github}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-400 to-accent-400 text-white font-bold text-sm shadow-lg shadow-brand-400/25 hover:shadow-brand-400/50 hover:scale-105 transition-all duration-300"
+              >
+                <FaGithub className="text-base" />
+                <span>View Repository</span>
+                <HiExternalLink className="text-base" />
+              </a>
+            ) : (
+              <div className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-accent-400/15 border border-accent-400/30 text-accent-300 font-semibold text-xs sm:text-sm shadow-lg">
+                <FaTrophy className="text-base text-amber-400" />
+                <span>Official ECPC Qualifier (No GitHub Repository)</span>
+              </div>
+            )}
           </div>
         </motion.div>
       </AnimatePresence>
