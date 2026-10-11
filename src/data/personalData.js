@@ -297,24 +297,35 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
       ],
       github: "https://github.com/mdiaad03-cloud/C2A-LAP-V1.1",
       tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "Paymob", "Bosta API", "Railway"],
+      masterclassUrl: "https://mdiaad03-cloud.github.io/masterclass/",
+      presentationUrl: "https://mdiaad03-cloud.github.io/masterclass/",
+      presentationSlides: [
+        { id: 1, src: "slides/Slide1.JPG", title: "Showcase Overview" },
+        { id: 2, src: "slides/Slide2.JPG", title: "C2A MERN Architecture" },
+        { id: 3, src: "slides/Slide3.JPG", title: "Server Bootstrap & Ports" },
+        { id: 4, src: "slides/Slide4.JPG", title: "API Security & Rate Limits" },
+        { id: 5, src: "slides/Slide5.JPG", title: "Bento Grid System" },
+        { id: 6, src: "slides/Slide6.JPG", title: "Framer Motion Animations" },
+        { id: 7, src: "slides/Slide7.JPG", title: "Engineering Philosophy" },
+      ],
     },
     {
       id: "odoo-integration",
-      name: "Donation Call-Center & Odoo ERP Integration API",
-      category: "Enterprise Integration",
-      badge: "Architectural API",
+      name: "Donation Call-Center & Odoo ERP Integration (.NET Web API)",
+      category: "Enterprise Integration & .NET",
+      badge: "Architectural Web API",
       period: "Jul 2026 – Oct 2026",
       description:
-        "High-reliability enterprise integration bridge connecting donation call centers with Odoo ERP. Uses Transactional Outbox and Integration Inbox patterns to ensure zero data loss during network disruptions and idempotent event processing.",
+        "High-reliability enterprise integration bridge connecting donation call centers with Odoo ERP engineered in C# and ASP.NET Core 10 Web API. Uses Transactional Outbox and Integration Inbox patterns to ensure zero data loss during network disruptions, ACID consistency in SQL Server, and idempotent event processing.",
       keyFeatures: [
-        "Transactional Outbox pattern for guaranteed message delivery between distributed databases",
-        "Integration Inbox pattern with idempotency keys preventing duplicate financial records",
-        "Batched event polling and acknowledgement with semantic versioning",
-        "Atomic bank-deposit allocation across multiple donation receipts",
-        "Detailed logging, retry mechanisms, and dead-letter queue for out-of-order events",
+        "Engineered in C# & ASP.NET Core 10 Web API with clean controller-service architecture",
+        "Transactional Outbox pattern in SQL Server with ACID transaction guarantees",
+        "Integration Inbox pattern with idempotency hashes preventing duplicate financial records",
+        "Batched event polling and leased handshake protocol with semantic versioning",
+        "Atomic bank-deposit allocation across multiple donation receipts with strict reconciliation checks",
       ],
       github: "https://github.com/mdiaad03-cloud/donation-odoo-erp-integration",
-      tags: ["Node.js", "Express", "Odoo ERP", "REST APIs", "Outbox Pattern", "Idempotency"],
+      tags: [".NET 10", "ASP.NET Core", "C#", "SQL Server", "Odoo ERP", "Outbox Pattern", "Idempotency", "REST APIs"],
     },
     {
       id: "windows-forms",
@@ -387,3 +398,5 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
 };
 
 export default data;
+
+
