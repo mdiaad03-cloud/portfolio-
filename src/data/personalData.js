@@ -53,7 +53,8 @@ const data = {
   email: "mdiaad03@gmail.com",
   university: "Badr University in Assiut",
   faculty: "Computer Science / Information Systems",
-  year: "Third-Year Student (Enrolled 2024, Graduating 2028)",
+  year: "Third-Year Student (GPA: 3.3 / 4.0)",
+  gpa: "3.3",
   profileImage: PROFILE_IMAGE,
 
   hero: {
@@ -68,18 +69,18 @@ const data = {
   about: {
     title: "About Me",
     role: "Full-Stack Software Engineer & Competitive Programmer",
-    bio: `Full-Stack Developer and third-year Computer Science / Information Systems student at Badr University in Assiut (enrolled since 2024, expected graduation: 2028).
+    bio: `Full-Stack Developer and third-year Computer Science & Information Systems student at Badr University in Assiut (enrolled since 2024, expected graduation: 2028 • GPA: 3.3).
 
 I bridge the gap between rigorous Computer Science theory and commercial, production-ready software engineering. I specialize in building end-to-end applications using React, Node.js/Express, ASP.NET Core, SQL Server, and MongoDB Atlas.
 
-In production environments, I developed commercial e-commerce storefronts and executive analytics dashboards for C2A LAP, integrating Paymob, InstaPay, Bosta shipping, and automated WhatsApp/email dispatch while enhancing site speed by 16%. I also engineered enterprise integration flows connecting donation call-center systems with Odoo ERP using Transactional Outbox and Integration Inbox patterns.
+In production environments, I engineered commercial e-commerce storefronts and executive analytics dashboards, integrating Paymob, InstaPay, Bosta shipping, and automated WhatsApp/email notifications. I also designed enterprise integration flows connecting donation call-center systems with Odoo ERP using Transactional Outbox and Integration Inbox patterns.
 
 Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++, which instilled in me strong algorithmic thinking, optimal time/memory complexity awareness, and resilience when tackling complex architectural challenges.`,
     highlights: [
-      { label: "Academic Standing", value: "3rd Year CS @ BUA" },
+      { label: "Academic Standing", value: "3rd Year (GPA 3.3)" },
       { label: "Competitive Programming", value: "ECPC / ICPC Qualifier" },
-      { label: "Performance Optimization", value: "+16% Speed Boost (C2A)" },
-      { label: "Fellowship Award", value: "DEPI MCIT Scholar" },
+      { label: "Full-Stack Architecture", value: ".NET & MERN Specialist" },
+      { label: "Fellowship Award", value: "رواد مصر الرقمية (DEPI)" },
     ],
   },
 
@@ -153,12 +154,13 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     { name: "HTML5 / CSS3", icon: SiHtml5, color: "#E34F26", category: "Frontend" },
   ],
 
-  /* ── Education Section (Separated from About) ─────────────────── */
+  /* ── Education Section (With GPA 3.3) ────────────────────────── */
   education: {
     institution: "Badr University in Assiut (BUA)",
     degree: "Bachelor of Science in Computer Science / Information Systems",
     duration: "2024 – Present (Expected Graduation: 2028)",
-    status: "Third-Year Student (Currently Enrolled)",
+    status: "Third-Year Student (GPA: 3.3 / 4.0)",
+    gpa: "3.3 / 4.0",
     description:
       "Undertaking intensive academic study in Computer Science and Information Systems, mastering the foundational theoretical and practical pillars of software engineering.",
     coreCourses: [
@@ -190,6 +192,13 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
         "Rigorous training covering computer science principles, memory layout, C, algorithms, and computational problem solving.",
     },
     {
+      title: "شهادة رواد مصر الرقمية (DEPI)",
+      issuer: "مبادرة رواد مصر الرقمية - وزارة الاتصالات وتكنولوجيا المعلومات",
+      icon: FaAward,
+      description:
+        "شهادة معتمدة من مبادرة رواد مصر الرقمية (DEPI) برعاية وزارة الاتصالات وتكنولوجيا المعلومات في تطوير وهندسة برمجيات الويب المتكاملة والـ React.",
+    },
+    {
       title: "Python Training - Microsoft",
       issuer: "Microsoft Online Spring Training Program",
       icon: FaAward,
@@ -203,13 +212,6 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
       description:
         "Advanced algorithmic problem solving, pointer manipulation, time/space complexity optimization, and competitive paradigms.",
     },
-    {
-      title: "React Training - El Rowad",
-      issuer: "El Rowad (Jun 2026)",
-      icon: FaAward,
-      description:
-        "Professional certification covering React component architecture, custom hooks, global state, and modern UI engineering.",
-    },
   ],
 
   /* ── Work Experience ─────────────────────────────────────────── */
@@ -220,14 +222,13 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
       period: "Nov 2025 – Present",
       type: "Commercial Production Platform",
       points: [
-        "Developed and actively maintain a high-end laptop e-commerce platform with a React/Vite storefront and an administrative analytics dashboard.",
-        "Built executive dashboard analytics to clarify where money is spent, monitor sales and profit flows, and support faster business decision-making, directly contributing to increased sales.",
+        "Developed and actively maintain a laptop e-commerce platform with a React/Vite storefront and an administrative analytics dashboard.",
+        "Built executive dashboard analytics to clarify where money is spent, monitor sales and profit flows, and support faster business decision-making.",
         "Engineered backend REST API modules for authentication, users, products, sales, online orders, shipping, and storefront settings using Node.js & Express.js.",
         "Implemented real-time product filtration, cart, checkout, order tracking, Arabic/English bilingual interface, and dark/light themes.",
         "Integrated Paymob, InstaPay, cash on delivery, Bosta shipping API, automated WhatsApp notifications (UltraMsg), and Nodemailer alerts.",
         "Supported Excel inventory import/export and batch order operations for seamless store management.",
         "Hardened system security with JWT authentication, CSRF protection, password hashing (bcrypt), RBAC, rate limiting, input sanitization, and SSRF protections deployed on Railway.",
-        "Improved website performance and loading speed by 16% through asset optimization and query caching.",
       ],
     },
     {
@@ -244,8 +245,16 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     },
   ],
 
-  /* ── Professional Training & Internships (Expanded space) ─────── */
+  /* ── Professional Training & Internships (DEPI - رواد مصر الرقمية) ─ */
   training: [
+    {
+      role: "Full-Stack Software Fellow",
+      organization: "مبادرة رواد مصر الرقمية (DEPI) - Round 5",
+      period: "Jun 2026",
+      badge: "رواد مصر الرقمية",
+      description:
+        "الالتحاق بمبادرة رواد مصر الرقمية (DEPI) برعاية وزارة الاتصالات وتكنولوجيا المعلومات (MCIT) - مسار AST، لدراسة معمارية برمجيات المؤسسات، وتطوير الويب المتكامل، وتقنيات React، وتطبيق أفضل معايير الكود النظيف ومنهجيات Agile/Scrum.",
+    },
     {
       role: "Enterprise Banking Systems Trainee",
       organization: "National Bank of Egypt (NBE)",
@@ -270,29 +279,13 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
       description:
         "Specialized training in integration design between call-center donation software and Odoo ERP, REST API event processing, and automated bank-deposit allocation workflows.",
     },
-    {
-      role: "Full-Stack Software Fellow",
-      organization: "Digital Egypt Pioneers Initiative (DEPI) - Round 5",
-      period: "Jun 2026",
-      badge: "MCIT Fellowship",
-      description:
-        "Selected for the Ministry of Communications & IT (MCIT) fellowship (AST track) covering enterprise web architectures, clean code design patterns, full-stack technologies, and Agile/Scrum.",
-    },
-    {
-      role: "Modern Frontend Trainee",
-      organization: "React Training - El Rowad",
-      period: "Jun 2026",
-      badge: "Frontend Excellence",
-      description:
-        "Intensive practical training focusing on modern React 19 architecture, component lifecycles, advanced state management, and high-performance UI optimization.",
-    },
   ],
 
-  /* ── Featured Projects (Positioned after Education & Experience) ── */
+  /* ── Featured Projects ────────────────────────────────────────── */
   projects: [
     {
       id: "c2a-lap",
-      name: "C2A LAP — Full-Stack E-Commerce & Analytics Platform",
+      name: "Laptop E-Commerce & Admin Analytics Platform",
       category: "Full-Stack Web App",
       badge: "Production Platform",
       period: "Nov 2025 – Present",
@@ -304,7 +297,6 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
         "Automated Paymob & InstaPay payment verification and Bosta shipping dispatch",
         "Automated WhatsApp (UltraMsg) and email notifications for order lifecycle",
         "Applied JWT, CSRF, RBAC, bcrypt, rate limiting, and SSRF protections on Railway",
-        "16% boost in overall page speed and database query execution",
       ],
       github: "https://github.com/mdiaad03-cloud/C2A-LAP-V1.1",
       tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "Paymob", "Bosta API", "Railway"],
@@ -377,7 +369,7 @@ Beyond development, I am an ICPC / ECPC-qualified competitive programmer in C++,
     },
   ],
 
-  /* ── High-Impact Call To Action & Contact ────────────────────── */
+  /* ── Contact ─────────────────────────────────────────────────── */
   contact: {
     headline: "Have an Ambitious Project or Engineering Role?",
     subheadline:

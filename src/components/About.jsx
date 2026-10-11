@@ -11,7 +11,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiX } from "react-icons/hi";
 import { BsArrowsFullscreen } from "react-icons/bs";
-import { FaLaptopCode, FaAward, FaBolt, FaGraduationCap } from "react-icons/fa";
+import { FaAward, FaGraduationCap, FaLaptopCode, FaShieldAlt } from "react-icons/fa";
 import data from "../data/personalData";
 
 export default function About() {
@@ -77,25 +77,25 @@ export default function About() {
           <div className="lg:col-span-8 flex flex-col justify-between">
             <div className="space-y-4 text-gray-300 leading-relaxed text-sm sm:text-base">
               <p>
-                I am a Full-Stack Developer and third-year Computer Science &amp; Information Systems student at <strong className="text-white">Badr University in Assiut</strong> (enrolled 2024, expected graduation: 2028).
+                I am a Full-Stack Developer and third-year Computer Science &amp; Information Systems student at <strong className="text-white">Badr University in Assiut</strong> (enrolled 2024, expected graduation: 2028 &bull; <strong className="text-brand-400 font-bold">GPA: 3.3</strong>).
               </p>
               <p>
                 I specialize in engineering end-to-end applications across the modern web stack, utilizing <strong className="text-brand-300">React, Node.js/Express, ASP.NET Core, Microsoft SQL Server, and MongoDB Atlas</strong>. My experience spans modular REST API development, database architecture, payment and shipping integrations, and application security hardening.
               </p>
               <p>
-                In production, I engineered the e-commerce storefront and analytics platform for <strong className="text-white">C2A LAP</strong>, providing actionable financial tracking for sales, expenses, and profits while boosting website performance by 16%. I also designed enterprise integration pipelines connecting donation call-center systems with <strong className="text-white">Odoo ERP</strong> using Transactional Outbox and Integration Inbox patterns.
+                In production, I engineered commercial e-commerce storefronts and executive analytics dashboards, providing actionable financial tracking for sales, expenses, and profits with Paymob, InstaPay, and Bosta integrations. I also designed enterprise integration pipelines connecting donation call-center systems with <strong className="text-white">Odoo ERP</strong> using Transactional Outbox and Integration Inbox patterns.
               </p>
               <p>
                 Beyond standard development, I am an <strong className="text-accent-400">ICPC / ECPC Qualifier</strong> in C++, which instilled in me deep algorithmic mastery, memory optimization, and fast problem solving under tight execution constraints.
               </p>
             </div>
 
-            {/* Quick Credentials Grid */}
+            {/* Quick Credentials Grid (Updated: GPA 3.3, ECPC, DEPI رواد مصر الرقمية, Full-Stack) */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 mt-8 pt-6 border-t border-white/10">
               <div className="bg-surface-800/80 p-3.5 rounded-2xl border border-white/5 text-center">
                 <FaGraduationCap className="text-xl text-brand-400 mx-auto mb-1.5" />
                 <div className="text-lg font-bold text-white">3rd Year</div>
-                <div className="text-[11px] text-gray-400">CS @ BUA</div>
+                <div className="text-[11px] text-brand-400 font-bold">GPA: 3.3 • BUA</div>
               </div>
 
               <div className="bg-surface-800/80 p-3.5 rounded-2xl border border-white/5 text-center">
@@ -105,15 +105,15 @@ export default function About() {
               </div>
 
               <div className="bg-surface-800/80 p-3.5 rounded-2xl border border-white/5 text-center">
-                <FaBolt className="text-xl text-amber-400 mx-auto mb-1.5" />
-                <div className="text-lg font-bold text-white">+16%</div>
-                <div className="text-[11px] text-gray-400">C2A Speed Boost</div>
+                <FaLaptopCode className="text-xl text-purple-400 mx-auto mb-1.5" />
+                <div className="text-lg font-bold text-white">DEPI</div>
+                <div className="text-[11px] text-brand-300 font-semibold">رواد مصر الرقمية</div>
               </div>
 
               <div className="bg-surface-800/80 p-3.5 rounded-2xl border border-white/5 text-center">
-                <FaLaptopCode className="text-xl text-purple-400 mx-auto mb-1.5" />
-                <div className="text-lg font-bold text-white">DEPI</div>
-                <div className="text-[11px] text-gray-400">MCIT Fellowship</div>
+                <FaShieldAlt className="text-xl text-emerald-400 mx-auto mb-1.5" />
+                <div className="text-lg font-bold text-white">Full-Stack</div>
+                <div className="text-[11px] text-gray-400">.NET &bull; MERN</div>
               </div>
             </div>
 
